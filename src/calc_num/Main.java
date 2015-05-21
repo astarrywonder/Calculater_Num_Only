@@ -7,7 +7,7 @@ public class Main {
 		System.out.println("Warning: this program is designed only for numbers, ^, (, ), *, /, +, and -");
 		System.out.println("Input:? ");
 		
-		String a = "s";
+		String a = "+";
 		
 		CalculatorNumInput teststrint = new CalculatorNumInput(a);
 		

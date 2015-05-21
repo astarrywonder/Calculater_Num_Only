@@ -27,44 +27,69 @@ public class CalculatorNumInput {
 	
 	//methods
 		private ExpressionNode stringtonode(String input){
-			return stringtonodebase(input);
-		}
-		
-		private ExpressionNode stringtonodebase(String input){
-			for(int i = 0; i < input.length(); i++){
-				if(isint(input.charAt(i))){
-					System.out.print("found an int");
-				}
-				else{
-					System.out.print("no ints");
-				}
-				
-				
-				
-				
-				
+			if(input.length() == 0){
+				return new ExpressionNode();
+			}
+			else{
+				stringtobaserecursion(0, input.length());
 			}
 			
 			
+			
+
+		    //exponents and roots
+			
+			
+		    //multiplication and division
+			
+			
+		    //addition and subtraction 
+			
+			
+			
+//			for(int i = 0; i < input.length(); i++){
+//				
+//			}
+			
+			
 			return null;
 		}
 		
-		private ExpressionNode stringtobaserecursion(){
+		private ExpressionNode stringtobaserecursion(int start, int end){
+			
 			return null;
 		}
-	
+		
 		private boolean isint(char input){
 			boolean result = false;
 			switch(input){
 				case '1':
+					result = true;
+					break;
 				case '2':
+					result = true;
+					break;
 				case '3':
+					result = true;
+					break;
 				case '4':
+					result = true;
+					break;
 				case '5':
+					result = true;
+					break;
 				case '6':
+					result = true;
+					break;
 				case '7':
+					result = true;
+					break;
 				case '8':
+					result = true;
+					break;
 				case '9':
+					result = true;
+					break;
 				case '0':
 					result = true;
 					break;
@@ -74,5 +99,53 @@ public class CalculatorNumInput {
 			return result;
 		}
 		
-	//methods get and set
+		private boolean isint(String input, int index){
+			boolean result = false;
+
+			if(isint(input.charAt(index))){
+				result = true;
+			}
+			else{
+				result = false;
+			}
+			return result;
+		}
+
+		private boolean isvalidexpression(String input){
+			boolean result = false;
+			if(isvalidexpressionsym(input) && isvalidexpressionstructure(input)){
+				result = true;
+			}
+			else{
+				result = false;
+			}
+			
+			
+			
+			return result;
+		}
+		
+		private boolean isvalidexpressionsym(String input) {
+			boolean result = false;
+
+			
+			
+			
+			return result;
+		}
+		
+		private boolean isvalidexpressionstructure(String input) {
+			boolean result = false;
+
+			
+			
+			
+			return result;
+		}
+		
+		//methods get and set
+		public boolean doisvalidexpression(String input){
+			return isvalidexpression(input);
+		}
+		
 }

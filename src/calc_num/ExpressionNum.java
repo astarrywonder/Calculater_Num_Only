@@ -3,22 +3,22 @@ package calc_num;
 
 public class ExpressionNum {
 	//variables
-		private int Expression;
+		private String Expression;
 	
 	//variables get and set
-		public int getExpression(){
+		public String getExpression(){
 			return Expression;
 		}
 	
-		public void setExpression(int input){
+		public void setExpression(String input){
 			this.Expression = input;
 		}
 	
 	//constructors
 		public ExpressionNum(){
-			this.Expression = 0;
+			this.Expression = "";
 		}
-		public ExpressionNum(int input){
+		public ExpressionNum(String input){
 			this.Expression = input;
 		}
 		
